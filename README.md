@@ -9,7 +9,6 @@ Table of Contents |
 [Usage](#Usage)
 [Screenshots](#Screenshots)
 [Contributing](#Contributing)
-[Tests](#Tests)
 [Questions](#Questions)
 
 <br />
@@ -28,7 +27,7 @@ The application is designed to search the Google API for books. It includes a lo
 
 You can find the deployed link and the repository link below:
 
-Deployed Link: [Deployed Link]()
+Deployed Link: [Deployed Link](https://pacific-journey-12256.herokuapp.com/)
 
 Repo Link: [Repo Link](https://github.com/cerafinn/book-search)
 
@@ -36,9 +35,11 @@ Repo Link: [Repo Link](https://github.com/cerafinn/book-search)
 
 ## Screenshots
 
-![IMG]()
+![MAIN](./assets/book-search-main.png)
 
-![Account View]()
+![ACCOUNT](./assets/book-search-user.png)
+
+![GIF](./assets/book-search-vid.gif)
 
 <br />
 
