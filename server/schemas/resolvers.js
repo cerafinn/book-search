@@ -1,5 +1,6 @@
 const { AuthenticationError } = require('apollo-server-errors');
 const { User } = require('../models');
+const { findByIdAndUpdate } = require('../models/User');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -28,16 +29,37 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+
     addUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);
       return { token, user };
     },
-    saveBook: async () => {
 
+    saveBook: async (parent, { bookInfo }, context) => {
+      if (context.user) {
+        const updateUser = await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $push: { savedBooks: bookInfo } },
+          { new: true }
+        );
+        return updateUser;
+      }
+      throw new AuthenticationError('You must be logged in to save a book to your saved books')
     },
-    removeBook: async () => {
 
+    removeBook: async (parent, { bookId}, context ) => {
+      if (context.user) {
+        const updateUser = await findByIdAndUpdate(
+          { _id: context.user_id },
+          { $pull: {savedBooks: { bookId} } },
+          { new: true }
+        );
+        return updateUser;
+      }
+      throw new AuthenticationError('You must be logged in to remove a book from your saved books')
     },
   }
 }
+
+module.exports = resolvers;
