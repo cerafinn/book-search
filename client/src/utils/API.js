@@ -1,3 +1,5 @@
+// API file was replaced with mutations and queries for GraphQL
+
 // route to get logged in user's info (needs the token)
 export const getMe = (token) => {
   return fetch('/api/users/me', {

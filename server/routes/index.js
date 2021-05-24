@@ -1,3 +1,5 @@
+// API replaced by GraphQL
+
 const router = require('express').Router();
 const path = require('path');
 const apiRoutes = require('./api');

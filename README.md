@@ -3,10 +3,18 @@
 ## Description
 Application designed to search for books and add them to the user's book collection.
 
+Worked done on this application includes: 
+
+* Creating typeDefs and resolvers using GraphQL on backend
+* Integrating Apollo Server, a standalone GraphQL server
+* Creating mutations and queries on the frontend
+* Replacing API calls with mutations and queries in the components and pages
+
 Table of Contents |
 -------------------|
 [Installation](#Installation)
 [Usage](#Usage)
+[Technologies](#Technologies)
 [Screenshots](#Screenshots)
 [Contributing](#Contributing)
 [Questions](#Questions)
@@ -32,6 +40,12 @@ Deployed Link: [Deployed Link](https://pacific-journey-12256.herokuapp.com/)
 Repo Link: [Repo Link](https://github.com/cerafinn/book-search)
 
 <br />
+
+## Technologies
+
+* Javascript
+* React
+* GraphQL
 
 ## Screenshots
 
