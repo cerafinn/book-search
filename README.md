@@ -3,12 +3,20 @@
 ## Description
 Application designed to search for books and add them to the user's book collection.
 
+Worked done on this application includes: 
+
+* Creating typeDefs and resolvers using GraphQL on backend
+* Integrating Apollo Server, a standalone GraphQL server
+* Creating mutations and queries on the frontend
+* Replacing API calls with mutations and queries in the components and pages
+
 Table of Contents |
 -------------------|
 [Installation](#Installation)
 [Usage](#Usage)
 [Technologies](#Technologies)
 [Screenshots](#Screenshots)
+[Author](#Author)
 [Contributing](#Contributing)
 [Questions](#Questions)
 
@@ -47,6 +55,12 @@ Repo Link: [Repo Link](https://github.com/cerafinn/book-search)
 ![ACCOUNT](./assets/book-search-user.png)
 
 ![GIF](./assets/book-search-vid.gif)
+
+<br />
+
+## Author
+
+Created with ❤️ by Andaleeb Farooq
 
 <br />
 
